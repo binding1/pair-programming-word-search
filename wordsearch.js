@@ -3,6 +3,7 @@ const wordSearch = (letters, word) => {
     if (letters.length === 0) {
         return false;
     };
+    
     const letterJoin = letters.map(ls => ls.join('')) //joins letters horizontally
     const lettersCaps = letterJoin.map(ls => {
       return ls.toUpperCase();
